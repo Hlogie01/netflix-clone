@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
+
 .row {
   margin-left: 20px;
   color: white;
@@ -5,6 +7,7 @@
 
 .row h2 {
   margin-left: 20px;
+  font-family: 'Imbue', serif;
 }
 
 .row__posters {
@@ -31,8 +34,18 @@
   margin-top: 5px;
   font-size: 14px;
   font-weight: bold;
+  font-family: 'Imbue', serif;
 }
 
 .row__poster:hover {
   transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+  .row__poster {
+    max-height: 150px;
+  }
+  .row__posterTitle {
+    font-size: 12px;
+  }
 }

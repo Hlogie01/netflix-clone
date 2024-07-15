@@ -1,4 +1,6 @@
-/* src/components/Banner.css */
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
+
+
 .banner {
     position: relative;
     height: 448px;
@@ -6,6 +8,7 @@
     object-fit: contain;
     background-size: cover;
     background-position: center center;
+    font-family: 'Imbue', serif;
   }
   
   .banner__contents {
@@ -18,6 +21,7 @@
     font-size: 3rem;
     font-weight: 800;
     padding-bottom: 0.3rem;
+    font-family: 'Imbue', serif;
   }
   
   .banner__buttons {
@@ -35,6 +39,7 @@
     padding-right: 2rem;
     margin-right: 1rem;
     background-color: rgba(51, 51, 51, 0.5);
+    font-family: 'Imbue', serif;
   }
   
   .banner__button:hover {
@@ -50,7 +55,27 @@
     font-size: 0.8rem;
     max-width: 360px;
     height: 80px;
+    font-family: 'Imbue', serif;
   }
   
-  
+  @media (max-width: 768px) {
+    .banner__contents {
+      padding-top: 80px;
+    }
+    .banner__title {
+      font-size: 2rem;
+    }
+    .banner__description {
+      width: 100%;
+      font-size: 0.7rem;
+    }
+    .banner__buttons {
+      flex-direction: column;
+    }
+    .banner__button {
+      margin-bottom: 10px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
   

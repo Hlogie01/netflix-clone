@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
+
 .searchResults {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Imbue', serif;
   }
   
   .searchResults__item {
@@ -14,6 +17,7 @@
     padding: 10px;
     background-color: #141414;
     border-radius: 5px;
+    font-family: 'Imbue', serif;
   }
   
   .searchResults__item img {
@@ -27,3 +31,12 @@
     text-align: center;
   }
   
+  @media (max-width: 768px) {
+    .searchResult__image {
+      width: 100px;
+      height: 150px;
+    }
+    .searchResult__title {
+      font-size: 12px;
+    }
+  }

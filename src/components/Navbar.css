@@ -1,4 +1,6 @@
-/* src/components/Navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
+
+
 .navbar {
   position: fixed;
   top: 0;
@@ -11,6 +13,7 @@
   background-color: rgba(20, 20, 20, 0.8);
   z-index: 1000;
   transition: background-color 0.5s ease;
+  font-family: 'Imbue', serif;
 }
 
 .navbar__logo {
@@ -33,6 +36,7 @@
   border: none;
   border-radius: 2px;
   font-size: 14px;
+  font-family: 'Imbue', serif;
 }
 
 .navbar__searchButton {
@@ -43,6 +47,7 @@
   border: none;
   border-radius: 2px;
   cursor: pointer;
+  font-family: 'Imbue', serif;
 }
 
 .navbar__closeButton {
@@ -53,6 +58,7 @@
   border: none;
   border-radius: 2px;
   cursor: pointer;
+  font-family: 'Imbue', serif;
 }
 
 .navbar__buttons {
@@ -69,6 +75,7 @@
   border: none;
   border-radius: 2px;
   cursor: pointer;
+  font-family: 'Imbue', serif;
 }
 
 .navbar__button:hover {
@@ -106,4 +113,23 @@
 .searchResults__item p {
   margin-top: 10px;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .navbar__logo {
+    width: 80px;
+  }
+  .navbar__searchForm {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  .navbar__searchInput {
+    font-size: 12px;
+  }
+  .navbar__searchButton,
+  .navbar__closeButton,
+  .navbar__button {
+    padding: 5px;
+    font-size: 12px;
+  }
 }
